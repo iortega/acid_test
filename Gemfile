@@ -5,7 +5,8 @@ gem "sinatra"
 gem "rake"
 gem "resque"
 
-group :test do
+group :development, :test do
+  gem "foreman"
   gem "rspec"
   gem "rack-test"
   gem 'resque_spec'
